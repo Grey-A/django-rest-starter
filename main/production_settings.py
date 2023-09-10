@@ -23,8 +23,11 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
-# Comment out the following line and place your railway URL, and your production URL in the array.
-# CSRF_TRUSTED_ORIGINS = ["*"]
+# Edit the following line and place your railway URL, and your custom URL in the array.
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.up.railway.app", 
+    # NOTE: Place your custom url here if any
+]
 
 
 # Application definition
